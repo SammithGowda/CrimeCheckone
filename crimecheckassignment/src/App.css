@@ -14,10 +14,12 @@ body {
   width: 80%;
   height: 30px;
   margin-left: 20px;
+  border-radius: 3px;
+  border: none;
 }
 .login_main_div > label {
   display: inline-block;
-  padding: 0px 5px 15px 30px;
+  padding: 5px 5px 15px 20px;
 }
 .Loinbutton {
   height: 30px;
@@ -28,6 +30,7 @@ body {
   border-radius: 3px;
   color: white;
   background-color: blue;
+  margin-bottom: 5px;
 }
 .loginh3,
 .registerh3 {
@@ -51,6 +54,8 @@ body {
   width: 70%;
   height: 30px;
   margin-left: 50px;
+  border-radius: 3px;
+  border: none;
 }
 .submit_input {
   margin-top: 15px;
@@ -61,6 +66,7 @@ body {
   border-radius: 5px;
   color: whitesmoke;
   background-color: darkgoldenrod;
+  margin-bottom: 5px;
 }
 /* notice bord page*/
 
