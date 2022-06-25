@@ -1,6 +1,6 @@
 .login_main_div {
   border: 2px solid red;
-  width: 25%;
+  width: 30%;
   /* height: 400px; */
   margin: auto;
   margin-top: 50px;
@@ -19,7 +19,7 @@
   height: 30px;
   width: 100px;
   margin-top: 20px;
-  margin-left: 130px;
+  margin-left: 180px;
   border: none;
   border-radius: 3px;
   color: white;
@@ -61,7 +61,7 @@
 .notice_bord_main_div {
   border: 2px solid red;
   width: 70%;
-  height: 500px;
+  /* height: 500px; */
   margin: auto;
 }
 
@@ -90,4 +90,21 @@
   border-radius: 5px;
   color: white;
   background-color: black;
+}
+
+/**/
+
+.notice_view_div {
+  /* border: 2px solid green; */
+  width: 70%;
+  margin: auto;
+}
+.root_table {
+  word-break: break-all;
+  padding: 5px;
+}
+.root_table,
+td,
+tr {
+  border: 1px solid black;
 }

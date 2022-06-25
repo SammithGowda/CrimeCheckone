@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../App.css";
 import axios from "axios";
 export const Login = () => {
@@ -49,6 +49,7 @@ export const Login = () => {
         <button onClick={handlesubmit} className="Loinbutton">
           Login
         </button>
+        <Link to="/register">Donn't have Account ?</Link>
       </div>
     </>
   );
