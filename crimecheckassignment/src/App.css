@@ -56,3 +56,38 @@
   color: whitesmoke;
   background-color: darkgoldenrod;
 }
+/* notice bord page*/
+
+.notice_bord_main_div {
+  border: 2px solid red;
+  width: 70%;
+  height: 500px;
+  margin: auto;
+}
+
+.notice_header_div {
+  width: 60%;
+  /* border: 2px solid yellow; */
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.notice_header_div > p {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.notice_textarea_div {
+  width: 40%;
+  /* border: 2px solid yellow; */
+  margin: auto;
+}
+.notice_submit_button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
