@@ -25,6 +25,34 @@
   color: white;
   background-color: blue;
 }
-.loginh3 {
+.loginh3,
+.registerh3 {
   text-align: center;
+}
+
+/*Register Css*/
+
+.registerdiv {
+  border: 2px solid red;
+  width: 30%;
+  margin: auto;
+}
+.registerform > label {
+  display: inline-block;
+  padding: 5px 5px 10px 50px;
+}
+.registerform > input {
+  width: 70%;
+  height: 30px;
+  margin-left: 50px;
+}
+.submit_input {
+  margin-top: 15px;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: darkgoldenrod;
 }

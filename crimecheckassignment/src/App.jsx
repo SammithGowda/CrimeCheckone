@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/notice-bord-page" element={<NoticeBordPage />} />
+        <Route path="/notice-bord-page/:type" element={<NoticeBordPage />} />
       </Routes>
     </>
   );
