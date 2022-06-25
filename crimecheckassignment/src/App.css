@@ -7,7 +7,8 @@ body {
   /* height: 400px; */
   margin: auto;
   margin-top: 50px;
-  background-color: aqua;
+  background-color: #cde4f4;
+  border-radius: 8px;
 }
 .login_main_div > input {
   width: 80%;
@@ -39,6 +40,8 @@ body {
   /* border: 2px solid red; */
   width: 30%;
   margin: auto;
+  background-color: #cde4f4;
+  border-radius: 2px;
 }
 .registerform > label {
   display: inline-block;
