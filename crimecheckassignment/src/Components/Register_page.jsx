@@ -22,7 +22,15 @@ export const Register = () => {
           window.location.href = "/";
         }
       })
-      .catch((er) => alert(er.response.data.message));
+      .catch(
+        (er) => alert(er.response.data.message),
+        setRegister_data({
+          name: "",
+          username: "",
+          email: "",
+          password: "",
+        })
+      );
   };
 
   return (

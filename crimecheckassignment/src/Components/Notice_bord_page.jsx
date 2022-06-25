@@ -3,24 +3,25 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 export const NoticeBordPage = () => {
   const { state } = useLocation().state;
-  const user_id = state._id;
+  const username = state.name;
   const [text, setText] = useState("");
   const [notice_data, setNotice_data] = useState([]);
   const handleadd = () => {
     let data = {
       notice: text,
-      user_id: user_id,
+      username: username,
     };
     axios
-      .post(`http://localhost:4002/notice_bord_page`, data)
-      .then((res) => alert("Submited"));
+      .post(`https://samcrime.herokuapp.com/notice_bord_page`, data)
+      .then((res) => alert("Submited"), setText(""));
     // console.log(data);
   };
   useEffect(() => {
     axios
-      .get(`http://localhost:4002/notice_bord_page`)
+      .get(`https://samcrime.herokuapp.com/notice_bord_page`)
       .then((res) => setNotice_data(res.data));
-  }, []);
+  }, [notice_data]);
+
   return (
     <>
       <div className="notice_bord_main_div">
@@ -30,6 +31,7 @@ export const NoticeBordPage = () => {
         <div className="notice_textarea_div">
           <textarea
             className="textarea_tag"
+            value={text}
             onChange={(e) => setText(e.target.value)}
             cols="50"
             rows="5"
@@ -40,21 +42,21 @@ export const NoticeBordPage = () => {
             Submit Notice
           </button>
         </div>
-        <p>All Notice's</p>
+        <p className="table_text_tag">All Notice's</p>
         <div className="notice_view_div">
           <table className="root_table" style={{ width: "100%" }}>
             <thead>
-              <tr>
+              <tr className="table_header_row_text">
                 <td style={{ width: "400px" }}>NOTICE</td>
-                <td>USER ID</td>
+                <td>USER NAME</td>
                 <td>CREATED DATE</td>
               </tr>
             </thead>
             <tbody>
               {notice_data.map((e) => (
-                <tr key={e._id}>
+                <tr className="table_row_text" key={e._id}>
                   <td>{e.notice}</td>
-                  <td>{e.user_id}</td>
+                  <td>{e.username}</td>
                   <td>{e.createdAt}</td>
                 </tr>
               ))}

@@ -1,5 +1,8 @@
+body {
+  background-color: #fe977f;
+}
 .login_main_div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 30%;
   /* height: 400px; */
   margin: auto;
@@ -33,7 +36,7 @@
 /*Register Css*/
 
 .registerdiv {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 30%;
   margin: auto;
 }
@@ -59,10 +62,11 @@
 /* notice bord page*/
 
 .notice_bord_main_div {
-  border: 2px solid red;
+  /* border: 2px solid white; */
   width: 70%;
   /* height: 500px; */
   margin: auto;
+  margin-top: 20px;
 }
 
 .notice_header_div {
@@ -107,4 +111,18 @@
 td,
 tr {
   border: 1px solid black;
+}
+.table_text_tag {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+.table_row_text {
+  font-weight: 500;
+  font-size: small;
+}
+.table_header_row_text {
+  font-weight: bold;
 }
